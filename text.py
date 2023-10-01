@@ -14,7 +14,7 @@ class TextExtract:
         return keywords
 
     def keywords_detect(self):
-        df = pd.read_csv('D:\\Downloads\\Clone\\new\\model\\DA-ATH\\Class_description.csv')
+        df = pd.read_csv('D:\\Downloads\\Clone\\new\\model\\shecodes-da-ath\\Class_description.csv')
 
         key_dict = {}
         for name,cate,describe in zip(df['Name'], df['Category'],df['Description']):

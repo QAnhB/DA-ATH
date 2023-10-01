@@ -11,7 +11,7 @@ class ImageClassification:
         self.top1 = self.results()
     
     def load_model(self): 
-        model = YOLO('D:\\Downloads\\Clone\\new\\model\\DA-ATH\\best.pt')  # load a custom model
+        model = YOLO('D:\\Downloads\\Clone\\new\\model\\shecodes-da-ath\\best.pt')  # load a custom model
         return model
     
     def results(self):
@@ -28,7 +28,7 @@ class ImageClassification:
         return top
     
     def describe(self):
-        df = pd.read_csv('D:\\Downloads\\Clone\\new\\model\\DA-ATH\\Class_description.csv')
+        df = pd.read_csv('D:\\Downloads\\Clone\\new\\model\\shecodes-da-ath\\Class_description.csv')
 
         key_dict = {}
         for name,cate,describe in zip(df['Name'], df['Category'],df['Description']):
